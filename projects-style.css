@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.projects {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.project-image {
+    width: 100%; /* Resmi tüm genişliği kaplayacak şekilde ayarlayın */
+    max-height: 200px; /* Resmin yüksekliğini sınırlayın */
+    object-fit: cover; /* Resmi düzgün şekilde kesip sığdırın */
+    border-radius: 5px; /* Köşeleri yuvarlatın */
+    margin-bottom: 15px; /* Resim ile yazılar arasında boşluk bırakın */
+}
+
+.project-card h3 {
+    color: black;
+}
+
+.project-card p {
+    color: black;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.project-card a:hover {
+    color: #555;
+}
+
+.background {
+    position: fixed; /* Sabit yap */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("arkaplan5.jpg"); /* Resminizi ekleyin */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Sayfa kaydırıldığında sabit kalsın */
+    filter: blur(0px); /* Arka plana bulanıklık efekti uygula */
+    z-index: -0.1; /* Diğer öğelerin arka planda kalmasını sağlar */
+}
+header, main {
+    position: relative; /* Arka plandan etkilenmemesi için */
+    z-index: 1; /* Yazıları ön planda tutar */
+    color: white; /* Yazı rengini beyaz yaparak arka planla kontrast yaratın */
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 50px;
+    margin-top: -40px;
+}

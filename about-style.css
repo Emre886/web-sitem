@@ -1,0 +1,89 @@
+/* about-style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.about-me {
+    display: flex;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.2);
+}
+
+.about-text h2 {
+    font-size: 2rem;
+}
+
+.about-text ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.background {
+    position: fixed; /* Sabit yap */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("arkaplan5.jpg"); /* Resminizi ekleyin */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Sayfa kaydırıldığında sabit kalsın */
+    filter: blur(0px); /* Arka plana bulanıklık efekti uygula */
+    z-index: -0.1; /* Diğer öğelerin arka planda kalmasını sağlar */
+}
+
+/* Header ve Main gibi öğeler net kalacak */
+header, main {
+    position: relative; /* Arka plandan etkilenmemesi için */
+    z-index: 1; /* Yazıları ön planda tutar */
+    color: white; /* Yazı rengini beyaz yaparak arka planla kontrast yaratın */
+    text-align: center;
+    padding: 20px;
+}
+.about-text{
+    font-size: 20px;
+    text-align: center;
+}
+

@@ -1,0 +1,74 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.welcome {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+/* Genel arka plan için */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Arka Plan için blur efekti ekleyeceğimiz div */
+.background {
+    position: fixed; /* Sabit yap */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("arkaplan5.jpg"); /* Resminizi ekleyin */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Sayfa kaydırıldığında sabit kalsın */
+    filter: blur(0px); /* Arka plana bulanıklık efekti uygula */
+    z-index: -0.1; /* Diğer öğelerin arka planda kalmasını sağlar */
+}
+
+/* Header ve Main gibi öğeler net kalacak */
+header, main {
+    position: relative; /* Arka plandan etkilenmemesi için */
+    z-index: 1; /* Yazıları ön planda tutar */
+    color: white; /* Yazı rengini beyaz yaparak arka planla kontrast yaratın */
+    text-align: center;
+    padding: 20px;
+}
